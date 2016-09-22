@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --watch",
+    "start": "node ./dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,14 @@
     "babel-preset-stage-0": "^6.5.0",
     "standard": "^8.1.0",
     "webpack": "^1.13.2"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-0"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }

@@ -22,7 +22,7 @@ const loaders = [{
   loader: 'babel'
 }]
 
-export default {
+module.exports = {
   target,
   entry,
   output,
